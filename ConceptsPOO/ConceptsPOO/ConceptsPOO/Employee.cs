@@ -1,6 +1,6 @@
 ﻿namespace ConceptsPOO
 {
-    public abstract class Employee
+    public abstract class Employee:IPay
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -14,7 +14,7 @@
         public override string ToString()
         {
             return $"{Id}-{FirstName} {LastName}," +
-                $"Birth: {BirthDate}" +
+                $"Birth: {BirthDate} , " + 
                 $"Hiring: {HiringDate} ," +
                 $" Is active {IsActive}";
 
